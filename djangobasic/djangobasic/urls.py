@@ -23,5 +23,6 @@ from django.urls import path, re_path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls), #어떠한 url이 들어오면 어떠한 함수를 호출할건지
+    path('blog/', include('blog.urls')),
     path('shop/', include('shop.urls')),
 ]
